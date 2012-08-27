@@ -1,0 +1,99 @@
+#!/bin/bash
+
+function bold(){
+  tput bold && tput  setaf 1 #make output bold red
+  for s in "$@" ; do
+    echo $s
+  done
+  tput sgr0 #reset output style
+}
+
+function tester(){
+  ST=$(java $1Tester)
+  if [ "$ST" != 'Completed all tests.' ] ; then 
+    bold "your $1 class don't pass school tester";
+    echo "Tester output:"
+    echo -e "$ST\n" #-e enable backslash for new line
+  fi
+
+  if [ -f Test$1.class ] ;then
+    MT=$(java Test$1)
+    if [ "$MT" ] ; then 
+      echo "your $1 class don't pass your tester";
+      echo "Tester output:"
+      echo -e "$MT\n" #-e enable backslash for new line
+    fi
+  fi
+}
+
+function backup(){
+  mkdir back
+  for f in "$@" ; do
+    cp $f back/$f
+  done
+}
+
+function restore(){
+  for f in $(ls back); do
+    mv back/$f ./$f
+  done
+  rmdir back
+}
+
+function testFile(){
+  cp wrong/$2 ./;
+  MTR=$(java Test$1);
+  if [ -z "$MTR" ] ; then
+    bold "your tester fails for $2"
+    ATR=$(java $1Tester)
+    echo -e "the school tester output:\n$ATR\n"
+  fi
+}
+
+function testTester(){
+
+  #test against the school wrong classes
+  i=00
+  while [ -d "wrong/$2$i" ] ; do
+    testFile $1 $2$i/$1.class
+    i=$((10#$i+1)); #the 10# tells bash not to treat 08 as octal
+    if [ $i -lt 10 ] ; then
+      i="0$i"
+    fi
+  done
+  
+  #test against the good school class
+  cp wrong/cor/$1.class ./
+  MTR=$(java Test$1);
+  if [ "$MTR" ] ; then
+    bold "your Test$1 tester fails against working classes"
+    echo -e "the tester output: $MTR\n"
+  fi
+  
+}
+
+#main start here
+
+backup TestComplex.class Complex.class TestRGBColor.class RGBColor.class
+
+for c in Complex RGBColor ; do
+  if [ -f "$c.class" ] ; then
+    tester $c
+  else
+    bold "can't find file $c.class"
+  fi
+done
+
+if [ -e "TestComplex.class" ] ; then
+  testTester Complex c
+  else
+    bold "can't find file TestComplex.class"
+fi
+
+if [ -e "TestRGBColor.class" ] ; then
+  testTester RGBColor r
+  else
+    bold "can't find file TestRGBColor.class"
+fi
+
+restore
