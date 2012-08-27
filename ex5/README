@@ -1,0 +1,26 @@
+ohadcn
+Ohad Cohen
+
+==============================
+==  README for Ex5: Multidimensional Arrays
+==============================
+
+==================
+=  Description:  =
+==================
+
+two java classes:
+RGBImage: represents a image.
+Mandelbrot: represents a rectangular region of the complex plane as a color image
+
+=============================
+=  List of submitted files: =
+=============================
+
+README          This file
+RGBImage.java    Contains the RGBImage class.
+Mandelbrot.java    Contains the Mandelbrot class.
+
+======================
+=  Special Comments  =
+======================

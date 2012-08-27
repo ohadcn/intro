@@ -1,0 +1,31 @@
+ohadcn
+Ohad Cohen
+
+I didn't discussed the exercise, i took this readme file from the course site and changed it a little bit.
+
+==============================
+=  README for ex0: Hello World
+==============================
+
+
+usage: java program that just prints "Hello World" and exits
+
+==================
+=  Description:  =
+==================
+
+
+=============================
+=  List of submitted files: =
+=============================
+
+README          This file
+ex0.java    Contains the main method.
+...
+
+
+======================
+=  Special Comments  =
+======================
+
+What's up Doc?

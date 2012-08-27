@@ -1,0 +1,31 @@
+ohadcn
+Ohad Cohen
+
+==============================
+==  README for  Ex7:  Recursion
+==============================
+
+==================
+=  Description:  =
+==================
+
+four indepent java classes, see list of submitted files section below for more info.
+
+=============================
+=  List of submitted files: =
+=============================
+
+README                    This file
+RecursionMystery.java    has two methods, one that calculates Fibonacci numbers
+                         and one who convert numbers to binary base.
+                         
+PatternPainter.java    method that paints Extended Pattern.
+Hadamard.java          method that paints Hadamard Pattern.
+RecursiveLs.java       method that iterates over directories.
+...
+
+
+======================
+=  Special Comments  =
+======================
+

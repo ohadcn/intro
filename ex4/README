@@ -1,0 +1,35 @@
+ohadcn
+Ohad Cohen
+
+==============================
+==  README for  Ex4: Object Based Programming
+==============================
+
+==================
+=  Description:  =
+==================
+
+two java classes:
+RGBColor: represents a color.
+Complex: implements a Complex numbers and basic operations on them
+
+and their testing programs:
+TestRGBColor: tests the RGBColor class
+TestComplex: test the Complex class
+
+=============================
+=  List of submitted files: =
+=============================
+
+README          This file
+RGBColor.java    Contains the RGBColor class.
+Complex.java    Contains the Complex class.
+TestRGBColor.java    Contains the RGBColor testing program.
+TestComplex.java    Contains the RGBColor Complex program.
+...
+
+
+======================
+=  Special Comments  =
+======================
+

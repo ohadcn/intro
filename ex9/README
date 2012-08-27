@@ -1,0 +1,69 @@
+avioren             ohadcn
+Avi Oren            Ohad Cohen
+
+
+===============================
+README for Ex9 - Space Wars   =
+===============================
+
+
+==================
+=  Description:  =
+==================
+
+Designing and programing parts of the SpaceWars computer game. 
+As instructed at Ex9 description
+Using classes: SpaceWars.java, GameGUI.java, SpaceShipPhysics.java
+
+
+
+=============================
+=  List of submitted files: =
+=============================
+
+README                  This file
+AUTHORS                 Contains authors logins
+
+SpaceShip.java          Contains the abstract class SpaceShip, and general methods for all or some ships
+SpaceShipFactory.java   Contains single static method that is used to create spaceships
+
+AIShips.java            Contains the primary class for all AI ships (AI = Automatic Inteligence)
+AggressiveShip.java     Contains the methods for the agressive ship
+BasherShip.jav          Contains the methods for the basher ship
+RunnerShip.java         Contains the methods for the runner ship
+FloaterShip.java        Contains the methods for the floater ship
+SpecialShip.java        Contains the methods for the special ship
+                        SpecialShip is a crazy kind of aggressiveShips
+ 		                At first, it behaves like an aggressive, and after it was killed
+ 		                it freaks out, coming after the closest ship and shoots without any limitations!
+
+HumanShip.java          Contains the methods for the user controlled human ship
+                        also being used as primary class for the crazy human ship
+CrazyHumanShip.java     Contains the methods for the user controlled crazy human ship
+
+TestSpaceshipFactory.java   Contains the testing for spaceships creations
+TestSpaceship.java          Contains the unit-testing for the spaceships.
+                            This testing is using a fake game resources, which extends the real ones.
+FakeSpaceWars.java          Contains fake FakeSpaceWars class
+
+
+
+=====================
+= Classes Hierarchy =
+=====================
+
+SpaceShip.java  -----> AiShips.java  -----> FloaterShip.java
+                                    -----> RunnerShip.java
+                                    -----> AgressiveShip.java -----> SpecialShip.java
+                                    -----> BasherShip.java
+                -----> HumanShip.java -----> CrazyHumanShip.java
+                
+SpaceWars.java  ----->  FakeSpaceWars.java
+
+
+
+======================
+=  Special Comments  =
+======================
+
+

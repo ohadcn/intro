@@ -1,0 +1,37 @@
+ohadcn
+Ohad Cohen
+
+==============================
+==  README for  Ex10: Data Structures
+==============================
+
+==================
+=  Description:  =
+==================
+
+this file contains some classes for arithmetical expressions
+and for converting arithmetical expressions to classes can easily accessed by java programs
+this projects uses the classes Tokenizer, OpOrder, ElementType and Expression.
+
+=============================
+=  List of submitted files: =
+=============================
+
+/*** expression types: ***/
+Number.java     Represents a number that has a double value.
+Variable.java   A Variable is represented by its name. The values of all the variables are held in a Map.
+Operator.java   An operator can be one of 4 basic mathematical operators (+,-,*,/).
+
+/***classes used to parse string given expressions to expressions***/
+Evaluator.java  Holds a mathematical expression and maintains the environment of variable values as a Map.
+Parser.java     this class holds some methods that parses arithmetical expressions to Expression classes.
+
+/***misc***/
+README          This file
+...
+
+
+======================
+=  Special Comments  =
+======================
+

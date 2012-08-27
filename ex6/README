@@ -1,0 +1,31 @@
+ohadcn
+Ohad Cohen
+
+==============================
+==  README for  Ex6: Objects
+==============================
+
+==================
+=  Description:  =
+==================
+
+four java classes that constracts a Breakout game:
+
+=============================
+=  List of submitted files: =
+=============================
+
+README          This file
+Ball.java    Contains the Ball class.
+Paddle.java    Contains the Paddle class.
+Brick.java    Contains the Brick class.
+Game.java    Contains some game controlling methods.
+...
+
+
+======================
+=  Special Comments  =
+======================
+
+thanks for the testers source code!
+they realy help me!

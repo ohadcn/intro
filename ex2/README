@@ -1,0 +1,32 @@
+ohadcn
+Ohad Cohen
+
+==============================
+==  README for ex2: Variables, Operators, Flow Control, API
+==============================
+
+==================
+=  Description:  =
+==================
+
+three java programs:
+a)converts temperatures from Fahrenheit to Celsius and vice versa.
+b)solves system of 2 linear equations
+c)do some work on strings
+
+=============================
+=  List of submitted files: =
+=============================
+
+README          This file
+ex2a.java    Contains the first program.
+ex2b.java    Contains the second program.
+ex2c.java    Contains the third program.
+...
+
+
+======================
+=  Special Comments  =
+======================
+
+never let eclipse format the code for you, it look very bad.

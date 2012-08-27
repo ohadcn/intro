@@ -1,0 +1,37 @@
+ohadcn
+Ohad Cohen
+
+====================================
+==  README for  Ex8:   Interfaces ==
+====================================
+
+those classes could be divided into two groups, one implements a color and image
+and the second groups implements some functions on real numbers.
+
+=============================
+=  List of submitted files: =
+=============================
+
+README                   This file.
+
+---color and image classes
+    RGBColor.java            This class represents a color.
+    RGBImage.java            This class represents a 2D color image, composed of RGB pixels.
+
+---functions on real numbers
+    RealFunction.java        An interface that represents classes that are real valued functions.
+    LinearFunction.java      This class implements a linear function as RealFunction.
+    QuadraticFunction.java   This class represents a Quadratic function of the form a*(x^2).
+    SineFunction.java        This class represents a sine Function.
+    CosineFunction.java      This class represents a Cosine Function.
+    SumFunctions.java        This class represents a RealFunction that is the sum of the other real functions.
+    CompositeFunction.java   This class represents a RealFunction that is the composition of the two functions.
+    DerivativeFunction.java  This class represents a RealFunction that is the derivative of an other real function.
+    FunctionGraphics.java    This class graphically plots objects that implement the RealFunction interface.
+
+
+======================
+=  Special Comments  =
+======================
+
+i used my RGBColor and RGBImage from previous weeks.
